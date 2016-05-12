@@ -4,10 +4,6 @@
 			<th >
 				{{trans('career.enes')}}
 			</th>
-			<th ng-click="sort('campus')">
-				{{trans('career.campus')}}
-				<span class="glyphicon sort-icon" ng-show="sortKey=='campus'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
-			</th>
 			<th ng-click="sort('key')">
 				{{trans('career.keycareer')}}
 				<span class="glyphicon sort-icon" ng-show="sortKey=='key'" ng-class="{'glyphicon-chevron-up':reverse,'glyphicon-chevron-down':!reverse}"></span>
@@ -26,7 +22,6 @@
 		</tr>
 		<tr data-dir-paginate="entity in datacareer | orderBy:sortKey:reverse | filter:searchInput |itemsPerPage:15">
 			<td>@{{ entity.father_campus}}</td>
-			<td>@{{ entity.campus}}</td>
 			<td>@{{ entity.key}}</td>
 			<td>@{{ entity.	name}}</td>
 			<td>@{{ entity.description}}</td>
