@@ -31,7 +31,7 @@
 		</div>
 		<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
 			<div class="form-group">
-				<label class="label-control col-lg-4 col-sm-4 col-md-4 col-xs-4">Años:</label>
+				<label class="label-control col-lg-4 col-sm-4 col-md-4 col-xs-4">Año en el que se imparte:</label>
 				<div class="col-lg-6 col-sm-6 col-md-6 col-xs-6">
 					<select class="form-control" ng-model="subjectmatter.year_id" id="subjectmatteryear" name="subjectmatteryear" ng-change="filtersemes(subjectmatter.year_id)">
 						<option ng-repeat="y in years" value="@{{y.id}}"> @{{ y.name }}</option>
@@ -68,7 +68,7 @@
 				<input type="radio" id="isoptional" name="isoptional" ng-model="subjectmatter.isasmandatory" ng-value="true"/><label class="label-control">&nbsp;&nbsp;&nbsp;Asignatura obligatoria</label>
 			</div>
 			<div class="row">
-				<input type="radio" id="isoptional" name="isoptional" ng-model="subjectmatter.isasopctionaltrans" ng-value="true" /><label class="label-control">&nbsp;&nbsp;&nbsp;Asignatura optativa transversal</label>
+				<input type="radio" id="isoptional" name="isoptional" ng-model="subjectmatter.isasopctionaltrans" ng-value="true" /><label class="label-control">&nbsp;&nbsp;&nbsp;Asignatura optativa compartida</label>
 			</div>		
 		</div>
 	</div>
@@ -78,7 +78,7 @@
 				<input type="radio" id="subjectmatter" name="study" ng-model="iscomun_deep"  ng-click="changeComun()"/><label class="label-control">&nbsp;&nbsp;&nbsp;Tronco común</label>
 			</div>
 			<div class="row">
-				<input type="radio" id="deepingarea" name="study" ng-model="isdeepending" ng-click="change()"/><label class="label-control">&nbsp;&nbsp;&nbsp;Profundización</label> 
+				<input type="radio" id="deepingarea" name="study" ng-model="isdeepending" ng-click="change()"/><label class="label-control">&nbsp;&nbsp;&nbsp;Asignatura de área</label> 
 			</div>
 			<div class="row">
 				<input type="radio" id="technique" name="study" ng-model="subjectmatter.istechnique" ng-click="changeComun()" ng-value="true"/><label class="label-control">&nbsp;&nbsp;&nbsp;Carrera tecnica</label>
