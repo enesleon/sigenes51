@@ -78,6 +78,7 @@
     <script src="{{ asset('js/script/controllers/subjectmatter/subjectmatterAdminCtrl.js') }}"></script>
     <script src="{{ asset('js/script/controllers/schools/schoolsCtrl.js') }}"></script>
     <script src="{{ asset('js/script/controllers/studieplans/studieplansCtrl.js') }}"></script>
+    <script src="{{ asset('js/script/controllers/countrys/countrysAdminCtrl.js') }}"></script>
 @endif
 
 

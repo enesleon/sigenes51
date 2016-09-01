@@ -114,5 +114,20 @@
       </div>
     </div>
 
+    <div class="title">
+      <div class="header">
+        <i class="fa fa-fort-awesome"></i> Ajustes
+        <i class="dropdown icon"></i>
+      </div>
+    </div>
+
+    <div class="content">
+      <div class="subtitle">
+        <div class="menu">
+          <a class="item" href="{{ route('countrys.index') }}">Escuelas</a>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>

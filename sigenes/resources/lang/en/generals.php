@@ -17,5 +17,5 @@ return[
     "delete_error" => "Error to the deleted the",
     "yes" => "Yes",
     "search" => "Search ...",
-    "select" => "Select ..",
+    "select" => "Select .."
 ];
